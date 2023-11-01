@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+body {
+    color: #333333;
+    font-family: "Quicksand", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../img/pexels.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%; /* Mengatur lebar sesuai lebar viewport */
+    height: 100%; /* Mengatur tinggi sesuai tinggi viewport */
+    background-image: url('../img/pexels.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(0px);
+    z-index: -1;
+}
+
+
+
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    color: darkorange;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    transition: box-shadow 0.15s;
+    font-size: 25px;
+}
+header a:hover {
+    color: darkorange;
+}
+
+header a:active {
+    box-shadow: 0 0 5px 2px darkorange;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'roboto', sans-serif; 
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    max-width: 700px; /* Mengatur lebar maksimum form */
+    padding: 10px; /* Mengurangi ruang bantal di dalam form */
+    margin: 0 auto; /* Memposisikan form di tengah secara horizontal */
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid darkorange;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+}
+button:hover {
+    background: #9f5102; /* Ubah warna latar belakang saat dihover */
+}
+
+.main-content {
+    flex-grow: 1;
+}
+.main-content p {
+    text-align: center; /* Untuk memindahkan teks ke tengah */
+    color: #ffffff;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+img.portrait {
+    margin-top: 65px;
+    width: 260px;
+    border: 1px solid darkorange;
+    border-radius: 5%; 
+}
+
+.main-content2 {
+    flex-grow: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/pexels.jpg');
+    background-size: cover;
+    filter: blur(2px); /* Menambahkan efek blur */
+    z-index: -1;
+}
+
+.bio {
+    max-width: 400px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    color: #333333;
+
+}
+
+
+.bio p {
+    position: relative;
+    z-index: 1;
+    margin: 8px 0;
+    color: orange;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: darkorange;
+    border-bottom: 1px solid darkorange;
+}
+
+
+footer {
+    font-family: "Quicksand", sans-serif;
+    color: gold;
+    border-top: 1px solid darkorange;
+    margin-top: 16px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+footer p{
+    font-family: "Quicksand", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.section{
+    font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section h2{
+    font-family: "Quicksand", sans-serif;
+    font-size: 5rem;
+    margin: 2rem 0rem;
+}
+
+.faq{
+    max-width: 700px;
+    margin-top: 0rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid darkorange;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.8rem;
+    color: darkorange;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p{
+    font-family: "Quicksand", sans-serif;
+    margin: 15px 0;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+
+.faq.active .answer{
+    max-height: 500px;
+}
+
+.faq.active .question svg{
+    transform: rotate(180deg);
+}
+
+.svg{
+    transition: transform 0.5s ease-in;
+}
+
+/* Tambahan CSS untuk halaman berita */
+.berita-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.berita-item {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Ubah nilai alpha di sini (0-1) */;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+.berita-item img {
+    max-width: 100%; /* Mengatur lebar maksimum gambar agar tidak melebihi lebar wadahnya */
+    height: auto; /* Memastikan rasio aspek gambar terjaga */
+    border-radius: 10px; /* Memberikan sudut bulat pada gambar */
+    border: 2px solid darkorange; /* Memberikan border pada gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+    margin-bottom: 10px; /* Jarak antara gambar dengan paragraf */
+}
+.berita-item h3 {
+    font-family: "Quicksand", sans-serif;
+    color: darkorange;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.berita-item p {
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 1.6;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.berita-item a {
+    font-family: "Quicksand", sans-serif;
+    color: rgb(245, 135, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.berita-item a:hover {
+    color: rgb(122, 61, 0);
+}
+h2 {
+    color: darkorange;
+    font-size: 28px;
+    margin-top: 0;
+}

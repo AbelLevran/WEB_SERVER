@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{judul}}</title>
+    <link rel="icon" href="/img/API.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content2">
+        {{>header}}
+        <div class="content-wrapper">
+            <img class="portrait" src="img/me.png" alt="Foto Profil">
+            <div class="bio">
+                <p>Nama         : {{nama}}</p>
+                <p>NIM          : {{nim}}</p>
+                <p>Pendidikan   : {{pendidikan}}</p>
+                <p>Alamat       : {{alamat}}</p>
+                <p>Telepon      : {{telepon}}</p>
+                <p>Email        : {{email}}</p>
+                <p>Skills       : {{#each keterampilan}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>
+                <p>Sertifikat   : {{#each sertifikat}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}</p>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+
+</html>

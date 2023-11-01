@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Halaman Bantuan</title>
+    <link rel="icon" href="/img/API.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <div class="section">
+            <h2>FAQs</h2>
+        
+            <div class="faq">
+                <div class="question">
+                    <h3>Halaman ini digunakan untuk apa?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="orange" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                <p>Halaman ini digunakan untuk memberikan informasi dan panduan kepada pengguna
+                    tentang penggunaan aplikasi kami. Ini adalah sumber informasi tentang aplikasi kami.</p>
+                </div>
+
+            </div>
+            
+            <div class="faq">
+                <div class="question">
+                    <h3>Apa itu API?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="orange" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                <p>API (Application Programming Interface) adalah set aturan dan protokol yang
+                    memungkinkan perangkat lunak berkomunikasi satu sama lain. Dalam konteks aplikasi kami, API digunakan
+                    untuk mengambil data dari sumber eksternal dan menampilkannya kepada pengguna.</p>
+                </div>
+
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>API apa yang digunakan dalam aplikasi ini?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="orange" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                <p>Aplikasi kami menggunakan API weatherstack dan MediaStack dari layanan pihak ketiga untuk
+                    memberikan informasi cuaca yang akurat kepada pengguna dan menyajikan berita-berita</p>
+                </div>
+
+            </div>
+
+            <div class="faq">
+                <div class="question">
+                    <h3>Salah satu pola arsitektur API adalah?</h3>
+                    <svg width="15" height="10" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="orange" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="answer">
+                <p>Salah satu pola arsitektur API yang digunakan dalam aplikasi kami adalah
+                    RESTful (Representational State Transfer). RESTful adalah pendekatan yang mudah dipahami dan digunakan
+                    dalam komunikasi antara klien (pengguna aplikasi) dan server. Ini memungkinkan pertukaran data yang
+                    efisien melalui permintaan HTTP yang sederhana.</p>
+                    <img src="img/restful.png" width="500px" style="display: block; margin: 0 auto;">
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
